@@ -16,9 +16,9 @@ and open the template in the editor.
     height: 80px;
 }
 .meio{
-    background-color: #ddd;
-    min-height: 300px;
-    height: 300px;
+    /*background-color: #ddd;*/
+    /*min-height: 300px;*/
+    /*height: 300px;*/
     padding-top: 20px;
 }
 .rodape{
@@ -40,11 +40,83 @@ and open the template in the editor.
 
 .hr2{
     border: 1px solid #333;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.hr3{
+    border-bottom: 2px solid #333;
+}
+
+.hr4{
+/*    margin-top: 20px;
+    padding-top: 20px;*/
 }
 
 .rodape-login{
     color: #000;
     border-top-color: #333;
     border-bottom-color: #333;
+}
+
+.text-black{
+    color: #000000;
+}
+
+#fieldset-login{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    /*background-color: #09f;*/
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+#svMaisSol ul{
+    list-style: none;
+}
+
+#svMaisSol ul li{
+    float: left;
+    display: block;
+    margin-bottom: 3px;
+    margin-left: -35px;
+    padding-top: 4px;
+    /*padding-right: 4px;*/
+    border-bottom: 1px dashed #333;
+    width: 100%;
+
+}
+
+#svMaisSol ul li:hover{
+    background: #ddd;
+}
+
+#svMaisSol ul li dl:hover{
+       color: #f40e03;
+}
+
+#svMaisSol ul li dl{
+    float: left;
+    margin-bottom: 3px;
+}
+
+#svMaisSol span.num{
+    float: left;
+    padding: 5px 10px;
+    background: #fff;
+    font-size: 20px;
+    /*font: 18px Tahoma, Geneva, sans-serif;*/
+    border: 1px solid #777;
+    margin-right: 15px;
+    margin-bottom: 4px;
+}
+
+.table{
+    color: #333;
+}
+
+.table tbody tr:hover{
+    color: #f40e03;
+    background-color: #ddd;
 }

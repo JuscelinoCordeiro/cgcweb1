@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="ISO-8859-1">
+        <meta charset="UTF-8">
         <title>SGI - Login</title>
         <link href="../css/estilo.css" type="text/css" rel="stylesheet"/>
         <link href="../css/bootstrap.css" type="text/css" rel="stylesheet"/>
@@ -24,31 +24,9 @@
                 <!--<div id="formLogin">-->
                 <div class="col-xs-4"></div>
                 <div class="col-xs-4">
-                    <form name="form-login" action="" method="post">
-                        <fieldset>
-                            <legend class="">SGI - Login</legend>
-                            <?php
-                                if (isset($_POST['acao']) && ($_POST['acao'] == 'logar')) {
-                                    $idt = (int) strip_tags(filter_input(INPUT_POST, 'idt'));
-                                    $senha = strip_tags(filter_input(INPUT_POST, 'senha'));
-
-                                    $log = new Login();
-                                    if ($idt == '' || $senha == '') {
-                                        echo '<div id="alert" class="alert alert-error">
-                                                        <p class="text-center"><strong>ERRO! Usuário e/ou senha inválidos.</strong></p>
-                                                    </div>';
-                                    } else {
-                                        if ($log->logar($idt, $senha)) {
-                                            //redireciona via php - semelhante ao location.href
-                                            header("Location: admin.php");
-                                        } else {
-                                            echo '<div id="alert" class="alert alert-error">
-                                                        <p class="text-center"><strong>ERRO! Usuário e/ou senha inválidos.</strong></p>
-                                                    </div>';
-                                        }
-                                    }
-                                }
-                            ?>
+                    <fieldset id="fieldset-login">
+                        <form name="form-login" action="" method="post">
+                            <legend class="text-black hr3">SGI - Login</legend>
                             <div class="form-group">
                                 <label class="control-label">Identidade</label>
                                 <input class="form-control" type="text" name="idt" placeholder="Digite sua identidade" required />
@@ -59,10 +37,31 @@
                             </div>
                             <input type="hidden" name="acao" value="logar"/>
                             <input type="submit" value="Entrar" class="btn btn-success pull-right" onclick="return validar()"/>
+                        </form>
 
-                        </fieldset>
+                    </fieldset>
+                    <?php
+                        if (isset($_POST['acao']) && ($_POST['acao'] == 'logar')) {
+                            $idt = (int) strip_tags(filter_input(INPUT_POST, 'idt'));
+                            $senha = strip_tags(filter_input(INPUT_POST, 'senha'));
 
-                    </form>
+                            $log = new Login();
+                            if ($idt == '' || $senha == '') {
+                                echo '<div class="alert alert-danger" role="alert">
+                                                        <p class="text-center"><strong>ERRO!</strong> Usuário e/ou senha inválidos.</p>
+                                                    </div>';
+                            } else {
+                                if ($log->logar($idt, $senha)) {
+                                    //redireciona via php - semelhante ao location.href
+                                    header("Location: admin.php");
+                                } else {
+                                    echo '<div class="alert alert-danger" role="alert">
+                                                        <p class="text-center"><strong>ERRO!</strong> Usuário e/ou senha inválidos.</p>
+                                                    </div>';
+                                }
+                            }
+                        }
+                    ?>
                 </div><!--fim da div formlogin-->
             </div>
             <div class="col-xs-4"></div>
@@ -75,8 +74,7 @@
         </div>
 
         <div class="row-fluid">
-
-            <div class="col-xs-12 well">
+            <div class="col-xs-12 well well-lg">
                 <center><span class="rodape-login">Copyright &COPY; Todos os direitos reservados</span></center>
             </div>
         </div><!--fim da div rodape-->

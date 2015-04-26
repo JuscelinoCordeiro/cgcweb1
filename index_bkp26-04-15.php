@@ -8,23 +8,19 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
         <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
-        <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <div id="total" class="row-fluid">
             <div id="topo" class="span12 topo">cabecalho</div>
         </div>
         <div class="row-fluid">
-            <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">SGI - NOVO</a>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Início</a></li>
                             <li><a href="#">Link 1</a></li>
-                            <li><button type="button" class="btn btn-danger navbar-btn">Sign in</button></li>
-                            <li><button type="button" class="btn btn-default navbar-btn">Sign in</button></li>
                             <li><a href="#">Link 2</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Usuários <b class="caret"></b></a>
@@ -41,8 +37,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><button type="button" class="btn btn-primary navbar-btn">Sign in</button></li>
-                        </ul>                       
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -82,42 +77,7 @@
                             </div>
                         </div>
                     </div>
-                </div> <!--fim da div statis-->
-                <div id="content-info" class="col-xs-12">
-                    <table class=" table table-bordered table-hover">
-                        <thead>
-                        <th>Ord</th>
-                        <th>Nr OS</td>
-                        <th>Setor Solicitante</th>
-                        <th>Id do Equipemento</th>
-                        <th>Seviço Solicitado</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>20156</td>
-                                <td>Salc</td>
-                                <td>DTI-7890</td>
-                                <td>Configuração de Token</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>20158</td>
-                                <td>Divisão de Alunos</td>
-                                <td>DTI-1288</td>
-                                <td>Compartilhamento de impressora</td>
-                            </tr>
-                        </tbody>
-                    </table> 
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Button with data-target
-                    </button>
-                    <div class="collapse" id="collapseExample">
-                        <div class="well">
-                            Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                        </div>
-                    </div>
-                </div> <!--fim da div content-info-->
+                </div>
             </div>
             <div id="svMaisSol" class="col-xs-3 dir text-black">
                 <div class="panel panel-primary">
@@ -167,8 +127,8 @@
                             </li>
                             <!--                                    <li>
                                                                     <span class="num"><?php echo '2'/* $i */; ?></span>
-                                                                    <span class="name"><?php echo "Internet"; // echo $linha->TP_SERVICO;      ?></span>
-                                                                    <p><?php // echo $i . $linha->QTDE;      ?> 14 Chamados</p>
+                                                                    <span class="name"><?php echo "Internet"; // echo $linha->TP_SERVICO;  ?></span>
+                                                                    <p><?php // echo $i . $linha->QTDE;  ?> 14 Chamados</p>
                                                                 </li>-->
 
                             <?php
@@ -222,11 +182,11 @@
                                     <dd>3 chamados</dd>
                                 </dl>
                             </li>
-                            <!--                            <li>
-                                                            <span class="num"><?php // echo '1'//.$i;        ?></span>
-                                                            <span class="name"><?php // echo 'Setor'//.$linha->SETOR;        ?></span>
-                                                            <p><?php // echo '23'; //.$linha->QTDE;        ?> Chamados</p>
-                                                        </li>-->
+<!--                            <li>
+                                <span class="num"><?php // echo '1'//.$i;    ?></span>
+                                <span class="name"><?php // echo 'Setor'//.$linha->SETOR;    ?></span>
+                                <p><?php // echo '23'; //.$linha->QTDE;    ?> Chamados</p>
+                            </li>-->
                             <?php // } ?>
                         </ul>
                     </div>
@@ -234,13 +194,15 @@
             </div>
         </div>
         <div class="row-fluid">
-            <div class="col-xs-12">
-                <hr class="hr2">
-            </div>
-        </div>
-        <div class="row-fluid">
-            <div id="rodape" class="col-xs-12 well well-lg">  
-                <center><span class="rodape-login">Copyright &COPY; Todos os direitos reservados</span></center>
+            <div id="rodape" class="col-xs-12 rodape">rodape
+                <a href="geraPdf.php" class="btn btn-danger">Cancelar <i class="icon-file icon-white"></i></a>
+                <a href="geraPdf.php" class="btn btn-default">Gerar pdf <i class="icon-file icon-white"></i></a>
+                <a href="geraPdf.php" class="btn btn-primary">Gerar pdf <i class="icon-file icon-white"></i></a>
+                <a href="geraPdf.php" class="btn btn-warning">Gerar pdf <i class="icon-file icon-white"></i></a>
+                <a href="geraPdf.php" class="btn btn-success">Login <i class="icon-file icon-white"></i></a>
+                <a href="geraPdf.php" class="btn btn-info">Gerar pdf <span class="glyphicon glyphicon-file" aria-hidden="true"></span></a>
+                <a href="geraPdf.php" class="btn btn-inverse">Gerar pdf <i class="icon-file icon-white"></i></a>
+                <button class="btn btn-link">teste</button>
             </div>            
         </div>
     </body>
