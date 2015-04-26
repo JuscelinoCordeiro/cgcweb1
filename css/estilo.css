@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/04/2015, 19:57:29
+    Author     : apolo
+*/
+.topo{
+    background-color: #005580;
+    height: 190px;
+}
+.menu{
+    background-color: #66ffff;
+    height: 80px;
+}
+.meio{
+    background-color: #ddd;
+    min-height: 300px;
+    height: 300px;
+}
+.rodape{
+    background-color: #09f;
+    height: 120px;
+}
+
+.cor333{
+    background-color: #333;
+}
+
+.meio .esq{
+    background-color: #333;
+}
+
+.meio .dir{
+    background-color: #0f0;
+}
