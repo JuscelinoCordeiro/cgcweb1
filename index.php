@@ -43,10 +43,81 @@
             </div>
         </div>
         <div class="row-fluid meio">
-            <div id="" class="col-xs-9 esq">
-                <p class="text-success">conteudo</p>
+            <div id="" class="col-xs-9">
+                <div id="statis" class="row-fluid">
+                    <div class="col-xs-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center text-uppercase">os de hj</div>
+                            <div class="panel-body text-center">
+                                30                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center text-uppercase">os pendente</div>
+                            <div class="panel-body text-center">
+                                30                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center text-uppercase">resumo 30 dias</div>
+                            <div class="panel-body text-center">
+                                30                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center text-uppercase">maquinas paradas</div>
+                            <div class="panel-body text-center">
+                                30                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="" class="col-xs-3 dir">conteudo</div>
+            <div id="" class="col-xs-3 dir">
+                <div class="panel panel-primary text-uppercase">
+                    <div class="panel-heading">Serviços mais solicitados</div>
+                    <div class="panel-body">
+                        Serviços<br>
+                        Serviços<br>
+                        Serviços<br>
+                        Serviços<br>
+                        Serviços<br>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Estatisticas por setor</div>
+                    <div class="panel-body">
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                        estatisticas
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row-fluid">
             <div id="rodape" class="col-xs-12 rodape">rodape
