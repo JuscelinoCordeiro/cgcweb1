@@ -6,9 +6,9 @@
         <title>SGI</title>
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
-        <script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
-        <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+        <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+        <!--<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>-->
+        <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>
