@@ -2475,7 +2475,7 @@ fieldset[disabled] .btn-danger.active {
   color: #d9534f;
   background-color: #ffffff;
 }
-//======================
+/*======================*/ 
 .btn-inverse {
   color: #ffffff;
   background-color: #333333;
@@ -2522,7 +2522,7 @@ fieldset[disabled] .btn-inverse.active {
   background-color: #151515;
 }
 
-//======================
+/*======================*/
 .btn-link {
   color: #337ab7;
   font-weight: normal;

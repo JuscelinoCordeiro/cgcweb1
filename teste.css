@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/10/2015, 09:44:16
+    Author     : thoth
+*/
+#box {
+  min-height:128px;
+  height:auto !important;
+  height:128px;
+  padding:5px;
+}
+
+#topo{
+    height: 120px;
+    background-color: #0f0;
+}
+
+#rodape{
+    height: 120px;
+    background-color: #23527c;
+}
+
+.hr-rodape {
+    border: 1px solid #222;
+}

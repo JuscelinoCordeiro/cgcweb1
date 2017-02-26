@@ -7,9 +7,33 @@ and open the template in the editor.
     Created on : 21/04/2015, 19:57:29
     Author     : apolo
 */
-.topo{
-    background-color: #005580;
+/*body { padding-top: 70px; }*/
+
+.banner_login{
+    background-color: #ddd;
     height: 190px;
+    color: #000;
+}
+.banner_login img{
+    margin-top: 30px;
+    margin-left: 90px;
+}
+.banner_login h1{
+    margin-top: 50px;
+}
+
+.topo{
+    background-color: #ddd;
+    height: 190px;
+    margin-top: 50px;
+    color: #000;
+}
+.topo img{
+    margin-top: 30px;
+    margin-left: 90px;
+}
+.topo h1{
+    margin-top: 50px;
 }
 .menu{
     background-color: #66ffff;

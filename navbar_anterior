@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-header" >
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                         <!--<img alt="Brand" src=" <?php echo $varSite['SITE_PATH'] . $varSite['SITE_LOGO']; ?>">-->
+                        <?php echo $varSite['SITE_SIGLA']; ?></a>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><button type="button" class="btn btn-danger navbar-btn">Sign in</button></li>
+                        <li><button type="button" class="btn btn-default navbar-btn">Sign in</button></li>
+                        <li><button type="button" class="btn btn-default navbar-btn"><?php echo $varSite['SITE_SIGLA']; ?></button></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Usuários <b class="caret"></b></a>
+                            <ul class="dropdown-menu"  role="menu" aria-labelledby="dropdownMenu">
+                                <li><a href="#"><i class="icon-user"></i> Listar Usuários</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"> <i class="icon-list-alt"></i> Listar Motoristas</a></li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">Mais opções</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Link 1</a></li>
+                                        <li><a href="#">Link 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><button type="button" class="btn btn-primary navbar-btn">Sign in</button></li>
+                    </ul>                       
+                </div>
+            </div>
+        </nav>
